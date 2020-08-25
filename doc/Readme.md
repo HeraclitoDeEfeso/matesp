@@ -11,7 +11,7 @@ La presente carpeta contiene el informe del trabajo práctico.
 | Archivo | Descripción 
 |-|-
 | Readme.md | Este mismo archivo 
-| informe.tex | Informe en formato latex
+| informe.tex | Informe en formato latex. [Ver](https://latexonline.cc/compile?git=https%3A%2F%2Fgithub.com%2FHeraclitoDeEfeso%2Fmatesp&target=doc%2Finforme.tex&command=pdflatex)
 | logo.png | Logo de la UNTREF
 | circuito.png | Imagen de circuito RC de ejemplo
 | drain.png | Grafico obtenido con la aplicación y `graph`
