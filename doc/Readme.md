@@ -13,6 +13,12 @@ La presente carpeta contiene el informe del trabajo práctico.
 | Readme.md | Este mismo archivo 
 | informe.tex | Informe en formato latex
 | logo.png | Logo de la UNTREF
+| circuito.png | Imagen de circuito RC de ejemplo
+| drain.png | Grafico obtenido con la aplicación y `graph`
+| laplace.png | Diagrama de clases renderizado
+| class.puml | Diagrama de clases en plantuml. [Ver](http://www.plantuml.com/plantuml/proxy?src=https://raw.githubusercontent.com/HeraclitoDeEfeso/matesp/master/doc/class.puml)
+| Doxyfile | Configuración de `doxygen` para extraer autodocumentación
+| doxygen-latex | Carpeta con la autodocumentación extraída por `doxygen`
 
 _TODO_
 
