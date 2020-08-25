@@ -2,7 +2,7 @@
 
 ## Ingeniería en Computación
 
-### Laboratorio de Microcontroladores
+### Matemáticas Especiales
 
 #### Trabajo Práctico: "Ecuaciones diferenciales y la transformada de Laplace"
 
@@ -35,7 +35,7 @@ _TODO_
     - [X] Instrucciones de compilación
 - [X] Diseño
     - [X] Diagrama de clases y patrones de diseño.
-    - [X] Concepto REPL y diagrama de estados
+    - [ ] Concepto REPL y diagrama de estados
     - [ ] Eval: control data flow diagram para la simplificación de cálculos y tabla de soluciones.
     - [ ] Test y metodología.
 - [X] Análisis y Guía de uso
@@ -55,5 +55,5 @@ _TODO_
     - [X] Patrones de diseño
     - [ ] REPL
 - [X] Anexos
-    - [X] Tabla de trasformadas de Laplace usadas
+    - [ ] Tabla de trasformadas de Laplace usadas
     - [X] Autodocumentación
