@@ -1,0 +1,112 @@
+\doxysubsection{Evaluator Struct Reference}
+\label{structEvaluator}\index{Evaluator@{Evaluator}}
+
+
+T\+AD correspondiente al evaluador.  
+
+
+
+
+Collaboration diagram for Evaluator\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=155pt]{structEvaluator__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ Evaluator\+\_\+set\+\_\+function} (struct \textbf{ Evaluator} $\ast$self, struct \textbf{ Expression} $\ast$expression)
+\begin{DoxyCompactList}\small\item\em Método abstracto solucionador de ecuaciones. \end{DoxyCompactList}\item 
+int \textbf{ Evaluator\+\_\+eval} (struct \textbf{ Evaluator} $\ast$self, struct \textbf{ Expression} $\ast$expression, F\+I\+LE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Método que evalúa las expresiones. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Function} $\ast$ \textbf{ function}
+\begin{DoxyCompactList}\small\item\em Solución a la ecuación integral actualmente definida. \end{DoxyCompactList}\item 
+float \textbf{ init}
+\begin{DoxyCompactList}\small\item\em Condición inicial correspondiente a y(0) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+T\+AD correspondiente al evaluador. 
+
+La clase Evaluator es la encargada de mantener el contexto de evaluación y modificarlo de acuerdo a las expresiones que se le proveen. Se define como abstracta poque es necesario implementar en la clase concreta el método encargado de obtener la solución para una ecuación diferencial y su condición inicial. 
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\label{structEvaluator_a3af4ae1f473359de551d671d59ebc625}} 
+\index{Evaluator@{Evaluator}!Evaluator\_eval@{Evaluator\_eval}}
+\index{Evaluator\_eval@{Evaluator\_eval}!Evaluator@{Evaluator}}
+\doxyparagraph{Evaluator\_eval()}
+{\footnotesize\ttfamily int Evaluator\+\_\+eval (\begin{DoxyParamCaption}\item[{struct \textbf{ Evaluator} $\ast$}]{self,  }\item[{struct \textbf{ Expression} $\ast$}]{expression,  }\item[{F\+I\+LE $\ast$}]{stream }\end{DoxyParamCaption})}
+
+
+
+Método que evalúa las expresiones. 
+
+Método que evalúa las expresiones y modifica el contexto de evaluación de forma acorde. Precondición\+: el evaluador y la expresión deben haber sido creadas, debe haber memoria suficiente para crear una la solución, el flujo de datos de salida debe haber sido abierto para escritura. Poscondición\+: es posible que se solicite memoria para crear la solución, es posible que se modifiquen los atributos del evaluador que contienen el contexto de evaluación, es posible que se escriba en el flujo de datos de salida.
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & Autoreferencia al objeto \\
+\hline
+{\em expression} & Expresión correspondiente a los comandos \\
+\hline
+{\em stream} & Flujo de datos de salida \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor baleano a la proposición \char`\"{}se produjo un error\char`\"{} 
+\end{DoxyReturn}
+\mbox{\label{structEvaluator_ac5422ddd31bbff80976cba0dcdc6f0f3}} 
+\index{Evaluator@{Evaluator}!Evaluator\_set\_function@{Evaluator\_set\_function}}
+\index{Evaluator\_set\_function@{Evaluator\_set\_function}!Evaluator@{Evaluator}}
+\doxyparagraph{Evaluator\_set\_function()}
+{\footnotesize\ttfamily int Evaluator\+\_\+set\+\_\+function (\begin{DoxyParamCaption}\item[{struct \textbf{ Evaluator} $\ast$}]{self,  }\item[{struct \textbf{ Expression} $\ast$}]{expression }\end{DoxyParamCaption})}
+
+
+
+Método abstracto solucionador de ecuaciones. 
+
+Método abstracto que deberá implementar la clase concreta del evaluador. Devolverá la solución siempre que sean válidos tanto la ecuación como las condiciones iniciales. Precondición\+: el evaluador y la expresión deben haber sido creadas, debe haber memoria suficiente para crear la solución. Poscondición\+: es posible que se solicite memoria para crear la solución
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & Autoreferencia al objeto \\
+\hline
+{\em expression} & Expresión con la definición de la ecuación \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor baleano a la proposición \char`\"{}se obtuvo solución\char`\"{} 
+\end{DoxyReturn}
+
+
+\doxysubsubsection{Field Documentation}
+\mbox{\label{structEvaluator_ae409bc5fe601eddbd352402aa1072a2c}} 
+\index{Evaluator@{Evaluator}!function@{function}}
+\index{function@{function}!Evaluator@{Evaluator}}
+\doxyparagraph{function}
+{\footnotesize\ttfamily struct \textbf{ Function}$\ast$ Evaluator\+::function}
+
+
+
+Solución a la ecuación integral actualmente definida. 
+
+\mbox{\label{structEvaluator_a0e56a4e5d102b1fc8ada97ff273baf3d}} 
+\index{Evaluator@{Evaluator}!init@{init}}
+\index{init@{init}!Evaluator@{Evaluator}}
+\doxyparagraph{init}
+{\footnotesize\ttfamily float Evaluator\+::init}
+
+
+
+Condición inicial correspondiente a y(0) 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ eval.\+h}\end{DoxyCompactItemize}

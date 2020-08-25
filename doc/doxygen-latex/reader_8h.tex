@@ -1,0 +1,98 @@
+\doxysubsection{reader.\+h File Reference}
+\label{reader_8h}\index{reader.h@{reader.h}}
+
+
+Interfaz de la clases Parser y Tokenizer de la aplicación laplace.  
+
+
+Include dependency graph for reader.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{reader_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Lexer}
+\begin{DoxyCompactList}\small\item\em T\+AD que representa el analizador léxico del lenguaje. \end{DoxyCompactList}\item 
+struct \textbf{ Parser}
+\begin{DoxyCompactList}\small\item\em T\+AD que representa el analizador sintáctico del lenguaje. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \textbf{ M\+A\+X\+\_\+\+L\+I\+N\+E\+\_\+\+S\+I\+ZE}~80
+\begin{DoxyCompactList}\small\item\em Cantidad de caracteres máximos permitidos en un comando. \end{DoxyCompactList}\item 
+\#define \textbf{ C\+O\+M\+M\+A\+N\+D\+\_\+\+D\+E\+L\+IM}~\char`\"{} \textbackslash{}t\textbackslash{}n\char`\"{}
+\begin{DoxyCompactList}\small\item\em Delimitador de símbolos en un comando. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Expression} $\ast$ \textbf{ Parser\+\_\+read} (struct \textbf{ Parser} $\ast$self, F\+I\+LE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Método que lee un comando del flujo de datos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Interfaz de la clases Parser y Tokenizer de la aplicación laplace. 
+
+\begin{DoxyAuthor}{Author}
+Alejandro Araneda ({\texttt{ eloscurodeefeso@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/06-\/21
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}
+
+
+\doxysubsubsection{Macro Definition Documentation}
+\mbox{\label{reader_8h_afc1d0e1966b0c6c7e12381924b55d1fc}} 
+\index{reader.h@{reader.h}!COMMAND\_DELIM@{COMMAND\_DELIM}}
+\index{COMMAND\_DELIM@{COMMAND\_DELIM}!reader.h@{reader.h}}
+\doxyparagraph{COMMAND\_DELIM}
+{\footnotesize\ttfamily \#define C\+O\+M\+M\+A\+N\+D\+\_\+\+D\+E\+L\+IM~\char`\"{} \textbackslash{}t\textbackslash{}n\char`\"{}}
+
+
+
+Delimitador de símbolos en un comando. 
+
+\mbox{\label{reader_8h_a706068f562dd5c64a8b7bbd4b2298dd1}} 
+\index{reader.h@{reader.h}!MAX\_LINE\_SIZE@{MAX\_LINE\_SIZE}}
+\index{MAX\_LINE\_SIZE@{MAX\_LINE\_SIZE}!reader.h@{reader.h}}
+\doxyparagraph{MAX\_LINE\_SIZE}
+{\footnotesize\ttfamily \#define M\+A\+X\+\_\+\+L\+I\+N\+E\+\_\+\+S\+I\+ZE~80}
+
+
+
+Cantidad de caracteres máximos permitidos en un comando. 
+
+
+
+\doxysubsubsection{Function Documentation}
+\mbox{\label{reader_8h_ad8c1872b5278f6110b5f747195e57b16}} 
+\index{reader.h@{reader.h}!Parser\_read@{Parser\_read}}
+\index{Parser\_read@{Parser\_read}!reader.h@{reader.h}}
+\doxyparagraph{Parser\_read()}
+{\footnotesize\ttfamily struct \textbf{ Expression}$\ast$ Parser\+\_\+read (\begin{DoxyParamCaption}\item[{struct \textbf{ Parser} $\ast$}]{self,  }\item[{F\+I\+LE $\ast$}]{stream }\end{DoxyParamCaption})}
+
+
+
+Método que lee un comando del flujo de datos. 
+
+Este método devuelve un árbol sintáctico abstracto que se corresponde con un comando leído del flujo de datos. Precondición\+: el flujo de datos debe estar abierto, debe existir memoria suficiente para crear el árbol sintáctico. Poscondición\+: se leerá del flujo de datos, se solicitará memoria para el árbol sintáctico.
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & Autoreferencia al objeto \\
+\hline
+{\em stream} & Flujo de datos del que se leerán los comandos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Árbol sintáctico abstracto correspondiente al comando 
+\end{DoxyReturn}

@@ -1,0 +1,105 @@
+\doxysubsection{expr.\+c File Reference}
+\label{expr_8c}\index{expr.c@{expr.c}}
+
+
+Implementación de las clases Expression y Command.  
+
+
+Include dependency graph for expr.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{expr_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{expr_8c_a7dd96582cfe99f9fb33bd318a2477c39}} 
+struct \textbf{ Command} $\ast$ {\bfseries Command\+\_\+get\+\_\+command} (struct \textbf{ Command} $\ast$self, char $\ast$\textbf{ repr})
+\item 
+\mbox{\label{expr_8c_a60158be0153a709bb741afc8b803b979}} 
+struct \textbf{ Expression} $\ast$ {\bfseries Command\+\_\+get\+\_\+expression} (struct \textbf{ Command} $\ast$self, char $\ast$$\ast$args)
+\item 
+\mbox{\label{expr_8c_a4a19f79cec7f2aa4929b730d126e9f15}} 
+struct \textbf{ Expression} $\ast$ {\bfseries Expression\+\_\+create} (struct \textbf{ Command} $\ast$command, int argc)
+\item 
+void \textbf{ Expression\+\_\+destroy} (struct \textbf{ Expression} $\ast$self)
+\begin{DoxyCompactList}\small\item\em Destructor de la clase Expression. \end{DoxyCompactList}\item 
+\mbox{\label{expr_8c_a6062d8e207c45a00b582d71d923eb1f7}} 
+int {\bfseries Expression\+\_\+curry} (struct \textbf{ Expression} $\ast$self, char $\ast$$\ast$args)
+\item 
+\mbox{\label{expr_8c_ab408fa01e51df94a3613f79f987a4222}} 
+enum \textbf{ Symbol} {\bfseries Command\+\_\+get\+\_\+symbol} (struct \textbf{ Command} $\ast$self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Command} {\bfseries C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+B\+A\+SE} [$\,$]
+\item 
+struct \textbf{ Command} $\ast$ \textbf{ C\+O\+M\+M\+A\+N\+DS} = C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+B\+A\+SE
+\begin{DoxyCompactList}\small\item\em Vector con todos los comandos permitidos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Implementación de las clases Expression y Command. 
+
+\begin{DoxyAuthor}{Author}
+Alejandro Araneda ({\texttt{ eloscurodeefeso@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/06-\/23
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}
+
+
+\doxysubsubsection{Function Documentation}
+\mbox{\label{expr_8c_a01be0e712d24db4c523f4f5de836bf27}} 
+\index{expr.c@{expr.c}!Expression\_destroy@{Expression\_destroy}}
+\index{Expression\_destroy@{Expression\_destroy}!expr.c@{expr.c}}
+\doxyparagraph{Expression\_destroy()}
+{\footnotesize\ttfamily void Expression\+\_\+destroy (\begin{DoxyParamCaption}\item[{struct \textbf{ Expression} $\ast$}]{self }\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase Expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & Autoreferencia al objeto \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsubsection{Variable Documentation}
+\mbox{\label{expr_8c_a07953c5d554e0960852379242b0b54c4}} 
+\index{expr.c@{expr.c}!COMMANDS@{COMMANDS}}
+\index{COMMANDS@{COMMANDS}!expr.c@{expr.c}}
+\doxyparagraph{COMMANDS}
+{\footnotesize\ttfamily struct \textbf{ Command}$\ast$ C\+O\+M\+M\+A\+N\+DS = C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+B\+A\+SE}
+
+
+
+Vector con todos los comandos permitidos. 
+
+\mbox{\label{expr_8c_a935f7cce4c31ca705e694926976cc8a6}} 
+\index{expr.c@{expr.c}!COMMANDS\_BASE@{COMMANDS\_BASE}}
+\index{COMMANDS\_BASE@{COMMANDS\_BASE}!expr.c@{expr.c}}
+\doxyparagraph{COMMANDS\_BASE}
+{\footnotesize\ttfamily struct \textbf{ Command} C\+O\+M\+M\+A\+N\+D\+S\+\_\+\+B\+A\+SE[$\,$]}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \{INIT, \textcolor{stringliteral}{"init"}, 1, COMMANDS\_BASE + 1\},}
+\DoxyCodeLine{    \{STEP, \textcolor{stringliteral}{"step"}, 3, COMMANDS\_BASE + 2\},}
+\DoxyCodeLine{    \{REPR, \textcolor{stringliteral}{"repr"}, 0, COMMANDS\_BASE + 3\},}
+\DoxyCodeLine{    \{COEF, \textcolor{stringliteral}{"coef"}, 3, NULL\}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

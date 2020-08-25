@@ -1,0 +1,153 @@
+\doxysubsection{solver.\+c File Reference}
+\label{solver_8c}\index{solver.c@{solver.c}}
+
+
+Clases concretas de interfaces del módulo eval.  
+
+
+Include dependency graph for solver.\+c\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{solver_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{solver_8c_ae6c54fd042ff96d67f40b034601f3413}} 
+struct \textbf{ Evaluator} $\ast$ {\bfseries Static\+Solver\+\_\+create} ()
+\item 
+\mbox{\label{solver_8c_ac5422ddd31bbff80976cba0dcdc6f0f3}} 
+int {\bfseries Evaluator\+\_\+set\+\_\+function} (struct \textbf{ Evaluator} $\ast$self, struct \textbf{ Expression} $\ast$expression)
+\item 
+\mbox{\label{solver_8c_a77d71fac17b4b6d647967ebba574e5ae}} 
+struct \textbf{ Function} $\ast$ {\bfseries Solution1\+\_\+create} (struct \textbf{ Evaluator} $\ast$evaluator, struct \textbf{ Expression} $\ast$expression)
+\item 
+\mbox{\label{solver_8c_a094af6af101c05d374c9cca192c718df}} 
+struct \textbf{ Function} $\ast$ {\bfseries Solution2\+\_\+create} (struct \textbf{ Evaluator} $\ast$evaluator, struct \textbf{ Expression} $\ast$expression)
+\item 
+\mbox{\label{solver_8c_a84f84b974e8b45d9794c38de0918d2f3}} 
+struct \textbf{ Function} $\ast$ {\bfseries Solution3\+\_\+create} (struct \textbf{ Evaluator} $\ast$evaluator, struct \textbf{ Expression} $\ast$expression)
+\item 
+\mbox{\label{solver_8c_a4e7724a037da41d3337ad90f07a9fbbe}} 
+struct \textbf{ Function} $\ast$ {\bfseries Solution4\+\_\+create} (struct \textbf{ Evaluator} $\ast$evaluator, struct \textbf{ Expression} $\ast$expression)
+\item 
+\mbox{\label{solver_8c_a3197b21990f1e8c10cde288210ed9032}} 
+struct \textbf{ Function} $\ast$ {\bfseries Solution6\+\_\+create} (struct \textbf{ Evaluator} $\ast$evaluator, struct \textbf{ Expression} $\ast$expression)
+\item 
+\mbox{\label{solver_8c_a48879dfcde047b6cd18ee47aef958faf}} 
+struct \textbf{ Function} $\ast$ {\bfseries Solution7\+\_\+create} (struct \textbf{ Evaluator} $\ast$evaluator, struct \textbf{ Expression} $\ast$expression)
+\item 
+\mbox{\label{solver_8c_af9a05a81c4329ad8b6aa9e082ee42799}} 
+struct \textbf{ Function} $\ast$ {\bfseries Solution8\+\_\+create} (struct \textbf{ Evaluator} $\ast$evaluator, struct \textbf{ Expression} $\ast$expression)
+\item 
+\mbox{\label{solver_8c_a8cdd1923cb447d7094b216e38a8d550a}} 
+float {\bfseries Solution\+\_\+image} (struct \textbf{ Function} $\ast$self, float preimage)
+\item 
+void \textbf{ Solution2\+\_\+repr} (struct \textbf{ Function} $\ast$self, F\+I\+LE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Representación matemática de la solución 2. \end{DoxyCompactList}\item 
+void \textbf{ Solution3\+\_\+repr} (struct \textbf{ Function} $\ast$self, F\+I\+LE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Representación matemática de la solución 3. \end{DoxyCompactList}\item 
+void \textbf{ Solution4\+\_\+repr} (struct \textbf{ Function} $\ast$self, F\+I\+LE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Representación matemática de la solución 4. \end{DoxyCompactList}\item 
+void \textbf{ Solution6\+\_\+repr} (struct \textbf{ Function} $\ast$self, F\+I\+LE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Representación matemática de la solución 6. \end{DoxyCompactList}\item 
+void \textbf{ Solution8\+\_\+repr} (struct \textbf{ Function} $\ast$self, F\+I\+LE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Representación matemática de la solución 8. \end{DoxyCompactList}\item 
+\mbox{\label{solver_8c_acfb7baab5a9a32abc1f6c1ad6855a23e}} 
+void {\bfseries Solution\+\_\+destroy} (struct \textbf{ Function} $\ast$self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Function} $\ast$($\ast$ {\bfseries C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS} [$\,$])(struct \textbf{ Evaluator} $\ast$evaluator, struct \textbf{ Expression} $\ast$expression)
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Clases concretas de interfaces del módulo eval. 
+
+\begin{DoxyAuthor}{Author}
+Alejandro Araneda ({\texttt{ eloscurodeefeso@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/06-\/28
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}
+
+
+\doxysubsubsection{Function Documentation}
+\mbox{\label{solver_8c_aac3fe5fb7cac2ad5863c8c3cd61193bf}} 
+\index{solver.c@{solver.c}!Solution2\_repr@{Solution2\_repr}}
+\index{Solution2\_repr@{Solution2\_repr}!solver.c@{solver.c}}
+\doxyparagraph{Solution2\_repr()}
+{\footnotesize\ttfamily void Solution2\+\_\+repr (\begin{DoxyParamCaption}\item[{struct \textbf{ Function} $\ast$}]{self,  }\item[{F\+I\+LE $\ast$}]{stream }\end{DoxyParamCaption})}
+
+
+
+Representación matemática de la solución 2. 
+
+Corresponde a \char`\"{}y = d\char`\"{} donde \char`\"{}d\char`\"{} es la condición inicial \char`\"{}y(0)\char`\"{}. \mbox{\label{solver_8c_aa0f824e7eb1fa454304ccd89935b0f02}} 
+\index{solver.c@{solver.c}!Solution3\_repr@{Solution3\_repr}}
+\index{Solution3\_repr@{Solution3\_repr}!solver.c@{solver.c}}
+\doxyparagraph{Solution3\_repr()}
+{\footnotesize\ttfamily void Solution3\+\_\+repr (\begin{DoxyParamCaption}\item[{struct \textbf{ Function} $\ast$}]{self,  }\item[{F\+I\+LE $\ast$}]{stream }\end{DoxyParamCaption})}
+
+
+
+Representación matemática de la solución 3. 
+
+Corresponde a \char`\"{}y = 0\char`\"{}. \mbox{\label{solver_8c_aea345ae58eae2c49b3317ff29b9def45}} 
+\index{solver.c@{solver.c}!Solution4\_repr@{Solution4\_repr}}
+\index{Solution4\_repr@{Solution4\_repr}!solver.c@{solver.c}}
+\doxyparagraph{Solution4\_repr()}
+{\footnotesize\ttfamily void Solution4\+\_\+repr (\begin{DoxyParamCaption}\item[{struct \textbf{ Function} $\ast$}]{self,  }\item[{F\+I\+LE $\ast$}]{stream }\end{DoxyParamCaption})}
+
+
+
+Representación matemática de la solución 4. 
+
+Corresponde a \char`\"{}y = d $\ast$ exp(-\/b/a $\ast$ x)\char`\"{} donde \char`\"{}d\char`\"{} es la condición inicial \char`\"{}y(0)\char`\"{} y \char`\"{}a\char`\"{} y \char`\"{}b\char`\"{} son respectivamente el coeficiente de la derivada y de la función. \mbox{\label{solver_8c_a99916ac0e3a8c1914804b208c59f7288}} 
+\index{solver.c@{solver.c}!Solution6\_repr@{Solution6\_repr}}
+\index{Solution6\_repr@{Solution6\_repr}!solver.c@{solver.c}}
+\doxyparagraph{Solution6\_repr()}
+{\footnotesize\ttfamily void Solution6\+\_\+repr (\begin{DoxyParamCaption}\item[{struct \textbf{ Function} $\ast$}]{self,  }\item[{F\+I\+LE $\ast$}]{stream }\end{DoxyParamCaption})}
+
+
+
+Representación matemática de la solución 6. 
+
+Corresponde a \char`\"{}y = d -\/ c/a$\ast$x\char`\"{} donde \char`\"{}d\char`\"{} es la condición inicial \char`\"{}y(0)\char`\"{}, \char`\"{}c\char`\"{} es el término independiente y \char`\"{}a\char`\"{} el coeficiente de la derivada. \mbox{\label{solver_8c_ab7b5202a10dc4922761373ffd85911d0}} 
+\index{solver.c@{solver.c}!Solution8\_repr@{Solution8\_repr}}
+\index{Solution8\_repr@{Solution8\_repr}!solver.c@{solver.c}}
+\doxyparagraph{Solution8\_repr()}
+{\footnotesize\ttfamily void Solution8\+\_\+repr (\begin{DoxyParamCaption}\item[{struct \textbf{ Function} $\ast$}]{self,  }\item[{F\+I\+LE $\ast$}]{stream }\end{DoxyParamCaption})}
+
+
+
+Representación matemática de la solución 8. 
+
+Corresponde a \char`\"{}y = (d + c/b) $\ast$ exp(-\/b/a $\ast$ x) -\/ c/b\char`\"{} donde \char`\"{}d\char`\"{} es la condición inicial \char`\"{}y(0)\char`\"{}. 
+
+\doxysubsubsection{Variable Documentation}
+\mbox{\label{solver_8c_ad434c24e1fa02e7761da4db211b5b24a}} 
+\index{solver.c@{solver.c}!CONSTRUCTORS@{CONSTRUCTORS}}
+\index{CONSTRUCTORS@{CONSTRUCTORS}!solver.c@{solver.c}}
+\doxyparagraph{CONSTRUCTORS}
+{\footnotesize\ttfamily struct \textbf{ Function}$\ast$($\ast$ C\+O\+N\+S\+T\+R\+U\+C\+T\+O\+RS[$\,$])(struct \textbf{ Evaluator} $\ast$evaluator, struct \textbf{ Expression} $\ast$expression)}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{= \{}
+\DoxyCodeLine{    \&Solution1\_create, \&Solution2\_create, \&Solution3\_create, }
+\DoxyCodeLine{    \&Solution4\_create, \&Solution1\_create, \&Solution6\_create,}
+\DoxyCodeLine{    \&Solution7\_create, \&Solution8\_create}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

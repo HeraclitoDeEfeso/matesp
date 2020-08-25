@@ -1,0 +1,77 @@
+\doxysubsection{Function Struct Reference}
+\label{structFunction}\index{Function@{Function}}
+
+
+Tabla virtual de la interfaz Function.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\label{structFunction_a2b4bfd2ae1a8496e5f109de413d43d86}} 
+float \textbf{ Function\+\_\+image} (struct \textbf{ Function} $\ast$self, float preimage)
+\begin{DoxyCompactList}\small\item\em Despachador del método virtual image. \end{DoxyCompactList}\item 
+\mbox{\label{structFunction_a2e77f22e7de0734f23f411c95031c2f1}} 
+void \textbf{ Function\+\_\+repr} (struct \textbf{ Function} $\ast$self, F\+I\+LE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Despachador del método virtual repr. \end{DoxyCompactList}\item 
+\mbox{\label{structFunction_a6238f6891bc4294a7eac63c7d2f5d788}} 
+void \textbf{ Function\+\_\+destroy} (struct \textbf{ Function} $\ast$self)
+\begin{DoxyCompactList}\small\item\em Despachador del destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+float($\ast$ \textbf{ image} )(struct \textbf{ Function} $\ast$self, float preimage)
+\begin{DoxyCompactList}\small\item\em Método que devuelve el resultado de la función en un punto. \end{DoxyCompactList}\item 
+void($\ast$ \textbf{ repr} )(struct \textbf{ Function} $\ast$self, F\+I\+LE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Representación de la función en expresión matemática. \end{DoxyCompactList}\item 
+\mbox{\label{structFunction_ad9da432ba25c0f97cd75c63ade980c9d}} 
+void($\ast$ \textbf{ destroy} )(struct \textbf{ Function} $\ast$self)
+\begin{DoxyCompactList}\small\item\em Destructor de la clase que implemente la funcion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Tabla virtual de la interfaz Function. 
+
+
+
+\doxysubsubsection{Field Documentation}
+\mbox{\label{structFunction_af9cc240b57cb36969a986b4ad73dd99f}} 
+\index{Function@{Function}!image@{image}}
+\index{image@{image}!Function@{Function}}
+\doxyparagraph{image}
+{\footnotesize\ttfamily float($\ast$ image(struct \textbf{ Function} $\ast$self, float preimage)}
+
+
+
+Método que devuelve el resultado de la función en un punto. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em preimagen} & Valor del que se calculará la imagen \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+punto flotante con el resultado de la función 
+\end{DoxyReturn}
+\mbox{\label{structFunction_a034d7badcbf8c37b2d905eacc348a4e7}} 
+\index{Function@{Function}!repr@{repr}}
+\index{repr@{repr}!Function@{Function}}
+\doxyparagraph{repr}
+{\footnotesize\ttfamily void($\ast$ repr(struct \textbf{ Function} $\ast$self, F\+I\+LE $\ast$stream)}
+
+
+
+Representación de la función en expresión matemática. 
+
+Éste método devuelve una representación en caracteres de la función. Precondición\+: el flujo de salida ya ha sido abierto para escritura. Poscondición\+: se escribirá en el flujo de datos de salida.
+
+
+\begin{DoxyParams}{Parameters}
+{\em stream} & Flujo de salida donde se devolverá la representación \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ eval.\+h}\end{DoxyCompactItemize}

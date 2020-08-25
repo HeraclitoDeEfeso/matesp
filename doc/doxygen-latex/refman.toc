@@ -1,0 +1,87 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {section}{\numberline {1}Data Structure Documentation}{1}%
+\contentsline {subsection}{\numberline {1.1}Command Struct Reference}{1}%
+\contentsline {subsubsection}{\numberline {1.1.1}Detailed Description}{1}%
+\contentsline {subsubsection}{\numberline {1.1.2}Member Function Documentation}{2}%
+\contentsline {paragraph}{\numberline {1.1.2.1}Command\_get\_command()}{2}%
+\contentsline {paragraph}{\numberline {1.1.2.2}Command\_get\_expression()}{2}%
+\contentsline {paragraph}{\numberline {1.1.2.3}Command\_get\_symbol()}{2}%
+\contentsline {subsubsection}{\numberline {1.1.3}Field Documentation}{4}%
+\contentsline {paragraph}{\numberline {1.1.3.1}argc}{4}%
+\contentsline {paragraph}{\numberline {1.1.3.2}next}{4}%
+\contentsline {paragraph}{\numberline {1.1.3.3}repr}{4}%
+\contentsline {paragraph}{\numberline {1.1.3.4}symbol}{4}%
+\contentsline {subsection}{\numberline {1.2}Evaluator Struct Reference}{5}%
+\contentsline {subsubsection}{\numberline {1.2.1}Detailed Description}{5}%
+\contentsline {subsubsection}{\numberline {1.2.2}Member Function Documentation}{5}%
+\contentsline {paragraph}{\numberline {1.2.2.1}Evaluator\_eval()}{6}%
+\contentsline {paragraph}{\numberline {1.2.2.2}Evaluator\_set\_function()}{6}%
+\contentsline {subsubsection}{\numberline {1.2.3}Field Documentation}{6}%
+\contentsline {paragraph}{\numberline {1.2.3.1}function}{7}%
+\contentsline {paragraph}{\numberline {1.2.3.2}init}{7}%
+\contentsline {subsection}{\numberline {1.3}Expression Struct Reference}{7}%
+\contentsline {subsubsection}{\numberline {1.3.1}Detailed Description}{8}%
+\contentsline {subsubsection}{\numberline {1.3.2}Member Function Documentation}{8}%
+\contentsline {paragraph}{\numberline {1.3.2.1}Expression\_create()}{8}%
+\contentsline {paragraph}{\numberline {1.3.2.2}Expression\_curry()}{8}%
+\contentsline {subsubsection}{\numberline {1.3.3}Field Documentation}{8}%
+\contentsline {paragraph}{\numberline {1.3.3.1}argc}{9}%
+\contentsline {paragraph}{\numberline {1.3.3.2}args}{9}%
+\contentsline {paragraph}{\numberline {1.3.3.3}command}{9}%
+\contentsline {subsection}{\numberline {1.4}Function Struct Reference}{9}%
+\contentsline {subsubsection}{\numberline {1.4.1}Detailed Description}{9}%
+\contentsline {subsubsection}{\numberline {1.4.2}Field Documentation}{9}%
+\contentsline {paragraph}{\numberline {1.4.2.1}image}{9}%
+\contentsline {paragraph}{\numberline {1.4.2.2}repr}{10}%
+\contentsline {subsection}{\numberline {1.5}Lexer Struct Reference}{10}%
+\contentsline {subsubsection}{\numberline {1.5.1}Detailed Description}{10}%
+\contentsline {subsubsection}{\numberline {1.5.2}Member Function Documentation}{11}%
+\contentsline {paragraph}{\numberline {1.5.2.1}Lexer\_create()}{11}%
+\contentsline {paragraph}{\numberline {1.5.2.2}Lexer\_read()}{11}%
+\contentsline {subsubsection}{\numberline {1.5.3}Field Documentation}{11}%
+\contentsline {paragraph}{\numberline {1.5.3.1}lines}{11}%
+\contentsline {subsection}{\numberline {1.6}Parser Struct Reference}{12}%
+\contentsline {subsubsection}{\numberline {1.6.1}Detailed Description}{12}%
+\contentsline {subsubsection}{\numberline {1.6.2}Member Function Documentation}{12}%
+\contentsline {paragraph}{\numberline {1.6.2.1}Parser\_create()}{12}%
+\contentsline {subsubsection}{\numberline {1.6.3}Field Documentation}{13}%
+\contentsline {paragraph}{\numberline {1.6.3.1}lexer}{13}%
+\contentsline {subsection}{\numberline {1.7}Solution Struct Reference}{13}%
+\contentsline {subsubsection}{\numberline {1.7.1}Detailed Description}{14}%
+\contentsline {subsubsection}{\numberline {1.7.2}Member Function Documentation}{14}%
+\contentsline {paragraph}{\numberline {1.7.2.1}Solution\_image()}{14}%
+\contentsline {subsubsection}{\numberline {1.7.3}Field Documentation}{14}%
+\contentsline {paragraph}{\numberline {1.7.3.1}clousure}{14}%
+\contentsline {paragraph}{\numberline {1.7.3.2}vtable}{14}%
+\contentsline {section}{\numberline {2}File Documentation}{15}%
+\contentsline {subsection}{\numberline {2.1}command.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{15}%
+\contentsline {subsubsection}{\numberline {2.1.1}Detailed Description}{15}%
+\contentsline {subsection}{\numberline {2.2}eval.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{16}%
+\contentsline {subsubsection}{\numberline {2.2.1}Detailed Description}{17}%
+\contentsline {subsubsection}{\numberline {2.2.2}Macro Definition Documentation}{17}%
+\contentsline {paragraph}{\numberline {2.2.2.1}INIT\_DEFAULT}{17}%
+\contentsline {paragraph}{\numberline {2.2.2.2}POINTS\_DEFAULT}{17}%
+\contentsline {paragraph}{\numberline {2.2.2.3}STEP\_DEFAULT}{17}%
+\contentsline {subsection}{\numberline {2.3}expr.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{18}%
+\contentsline {subsubsection}{\numberline {2.3.1}Detailed Description}{19}%
+\contentsline {subsubsection}{\numberline {2.3.2}Enumeration Type Documentation}{19}%
+\contentsline {paragraph}{\numberline {2.3.2.1}Symbol}{19}%
+\contentsline {subsubsection}{\numberline {2.3.3}Function Documentation}{19}%
+\contentsline {paragraph}{\numberline {2.3.3.1}Expression\_destroy()}{19}%
+\contentsline {subsubsection}{\numberline {2.3.4}Variable Documentation}{19}%
+\contentsline {paragraph}{\numberline {2.3.4.1}COMMANDS}{20}%
+\contentsline {subsection}{\numberline {2.4}reader.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{20}%
+\contentsline {subsubsection}{\numberline {2.4.1}Detailed Description}{21}%
+\contentsline {subsubsection}{\numberline {2.4.2}Macro Definition Documentation}{21}%
+\contentsline {paragraph}{\numberline {2.4.2.1}COMMAND\_DELIM}{21}%
+\contentsline {paragraph}{\numberline {2.4.2.2}MAX\_LINE\_SIZE}{21}%
+\contentsline {subsubsection}{\numberline {2.4.3}Function Documentation}{21}%
+\contentsline {paragraph}{\numberline {2.4.3.1}Parser\_read()}{21}%
+\contentsline {subsection}{\numberline {2.5}solver.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}h File Reference}{22}%
+\contentsline {subsubsection}{\numberline {2.5.1}Detailed Description}{23}%
+\contentsline {subsubsection}{\numberline {2.5.2}Function Documentation}{23}%
+\contentsline {paragraph}{\numberline {2.5.2.1}Solution2\_repr()}{23}%
+\contentsline {paragraph}{\numberline {2.5.2.2}Solution3\_repr()}{23}%
+\contentsline {paragraph}{\numberline {2.5.2.3}Solution4\_repr()}{23}%
+\contentsline {paragraph}{\numberline {2.5.2.4}Solution6\_repr()}{24}%
+\contentsline {paragraph}{\numberline {2.5.2.5}Solution8\_repr()}{24}%

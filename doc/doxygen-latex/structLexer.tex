@@ -1,0 +1,80 @@
+\doxysubsection{Lexer Struct Reference}
+\label{structLexer}\index{Lexer@{Lexer}}
+
+
+T\+AD que representa el analizador léxico del lenguaje.  
+
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+char $\ast$$\ast$ \textbf{ Lexer\+\_\+read} (struct \textbf{ Lexer} $\ast$self, F\+I\+LE $\ast$stream)
+\begin{DoxyCompactList}\small\item\em Método que lee los diversos símbolos de un flujo de datos. \end{DoxyCompactList}\item 
+struct \textbf{ Lexer} $\ast$ \textbf{ Lexer\+\_\+create} (void)
+\begin{DoxyCompactList}\small\item\em Constructor del analizador lexicográfico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+int \textbf{ lines}
+\begin{DoxyCompactList}\small\item\em Campo que conserva la cantidad de líneas leídas. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+T\+AD que representa el analizador léxico del lenguaje. 
+
+
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\label{structLexer_abe2b48ba03d0fd3c56edd5cc82e58840}} 
+\index{Lexer@{Lexer}!Lexer\_create@{Lexer\_create}}
+\index{Lexer\_create@{Lexer\_create}!Lexer@{Lexer}}
+\doxyparagraph{Lexer\_create()}
+{\footnotesize\ttfamily struct \textbf{ Lexer} $\ast$ Lexer\+\_\+create (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Constructor del analizador lexicográfico. 
+
+\begin{DoxyReturn}{Returns}
+una referencia al objeto creado 
+\end{DoxyReturn}
+\mbox{\label{structLexer_a298156ece10f7552c24c7a9d5dc2362b}} 
+\index{Lexer@{Lexer}!Lexer\_read@{Lexer\_read}}
+\index{Lexer\_read@{Lexer\_read}!Lexer@{Lexer}}
+\doxyparagraph{Lexer\_read()}
+{\footnotesize\ttfamily char $\ast$$\ast$ Lexer\+\_\+read (\begin{DoxyParamCaption}\item[{struct \textbf{ Lexer} $\ast$}]{self,  }\item[{F\+I\+LE $\ast$}]{stream }\end{DoxyParamCaption})}
+
+
+
+Método que lee los diversos símbolos de un flujo de datos. 
+
+Este método devuelve en un vector de referencias los símbolos leídos de un flujo de datos. Precondición\+: el flujo de datos debe estar abierto, debe existir memoria suficiente para leer dos líneas del flujo y el vector resultado. Poscondición\+: se leerá del flujo de datos, se solicitará memoria para leer dos líneas del flujo de datos, podría solicitarse memoria para el vector resultado. La última posición del vector es nula.
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & Autoreferencia al objeto \\
+\hline
+{\em stream} & Flujo de datos del que se leerán los símbolos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector donde se alojarán los símbolos 
+\end{DoxyReturn}
+
+
+\doxysubsubsection{Field Documentation}
+\mbox{\label{structLexer_a5479e1bfdc38a51258966af033d87905}} 
+\index{Lexer@{Lexer}!lines@{lines}}
+\index{lines@{lines}!Lexer@{Lexer}}
+\doxyparagraph{lines}
+{\footnotesize\ttfamily int Lexer\+::lines}
+
+
+
+Campo que conserva la cantidad de líneas leídas. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ reader.\+h}\end{DoxyCompactItemize}

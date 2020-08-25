@@ -1,0 +1,160 @@
+\doxysubsection{Command Struct Reference}
+\label{structCommand}\index{Command@{Command}}
+
+
+T\+AD del comando ingresado en la expresión.  
+
+
+
+
+Collaboration diagram for Command\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{structCommand__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Command} $\ast$ \textbf{ Command\+\_\+get\+\_\+command} (struct \textbf{ Command} $\ast$self, char $\ast$\textbf{ repr})
+\begin{DoxyCompactList}\small\item\em Método que selecciona el comando correcto. \end{DoxyCompactList}\item 
+enum \textbf{ Symbol} \textbf{ Command\+\_\+get\+\_\+symbol} (struct \textbf{ Command} $\ast$self)
+\begin{DoxyCompactList}\small\item\em Accesor del campo del tipo de comando. \end{DoxyCompactList}\item 
+struct \textbf{ Expression} $\ast$ \textbf{ Command\+\_\+get\+\_\+expression} (struct \textbf{ Command} $\ast$self, char $\ast$$\ast$args)
+\begin{DoxyCompactList}\small\item\em Método factoría de la expression con sus argumentos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ Symbol} \textbf{ symbol}
+\begin{DoxyCompactList}\small\item\em Tipo de comando ingresado. \end{DoxyCompactList}\item 
+char $\ast$ \textbf{ repr}
+\begin{DoxyCompactList}\small\item\em Representación en caracteres del comando. \end{DoxyCompactList}\item 
+int \textbf{ argc}
+\begin{DoxyCompactList}\small\item\em Cantidad máxima de argumentos que acepta el comando. \end{DoxyCompactList}\item 
+struct \textbf{ Command} $\ast$ \textbf{ next}
+\begin{DoxyCompactList}\small\item\em Enlace al siguiente comando en la cadena. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+T\+AD del comando ingresado en la expresión. 
+
+Tipo abstracto de dato que modela el comando que se ha utilizado en la expresion. 
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\label{structCommand_a7a1ec986dd7575d9c63451542c952fee}} 
+\index{Command@{Command}!Command\_get\_command@{Command\_get\_command}}
+\index{Command\_get\_command@{Command\_get\_command}!Command@{Command}}
+\doxyparagraph{Command\_get\_command()}
+{\footnotesize\ttfamily struct \textbf{ Command} $\ast$ Command\+\_\+get\+\_\+command (\begin{DoxyParamCaption}\item[{struct \textbf{ Command} $\ast$}]{self,  }\item[{char $\ast$}]{repr }\end{DoxyParamCaption})}
+
+
+
+Método que selecciona el comando correcto. 
+
+Este método recorrerá la cadena de comandos hasta hallar el que corresponda con la representación. Precondición\+: ninguna. Poscondición\+: ninguna. ~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & Autoreferencia al objeto \\
+\hline
+{\em repr} & Representación en caracteres del comando \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve el comando de la representación. El resultado puede ser nulo. 
+\end{DoxyReturn}
+\mbox{\label{structCommand_a03afcb09f3fe5334f21721a21e0c1e66}} 
+\index{Command@{Command}!Command\_get\_expression@{Command\_get\_expression}}
+\index{Command\_get\_expression@{Command\_get\_expression}!Command@{Command}}
+\doxyparagraph{Command\_get\_expression()}
+{\footnotesize\ttfamily struct \textbf{ Expression} $\ast$ Command\+\_\+get\+\_\+expression (\begin{DoxyParamCaption}\item[{struct \textbf{ Command} $\ast$}]{self,  }\item[{char $\ast$$\ast$}]{args }\end{DoxyParamCaption})}
+
+
+
+Método factoría de la expression con sus argumentos. 
+
+Método factoria de la expresion. Precondición\+: debe haber memoria suficiente para crear la expresion. Poscondición\+: es posible que se haya solicitado memoria para crear la expresion. ~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & Autoreferencia al objeto \\
+\hline
+{\em args} & Representación en caracteres de los argumentos \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve una expresión correspondiente al comando con sus argumentos. El resultado puede ser nulo. 
+\end{DoxyReturn}
+\mbox{\label{structCommand_ab408fa01e51df94a3613f79f987a4222}} 
+\index{Command@{Command}!Command\_get\_symbol@{Command\_get\_symbol}}
+\index{Command\_get\_symbol@{Command\_get\_symbol}!Command@{Command}}
+\doxyparagraph{Command\_get\_symbol()}
+{\footnotesize\ttfamily enum \textbf{ Symbol} Command\+\_\+get\+\_\+symbol (\begin{DoxyParamCaption}\item[{struct \textbf{ Command} $\ast$}]{self }\end{DoxyParamCaption})}
+
+
+
+Accesor del campo del tipo de comando. 
+
+Método que devuelve el tipo de comando. Precondición\+: el comando fue creado. Poscondición\+: ninguna. ~\newline
+
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & Autoreferencia al objeto \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Devuelve el tipo de comando 
+\end{DoxyReturn}
+
+
+\doxysubsubsection{Field Documentation}
+\mbox{\label{structCommand_acf9775f3f2d7b30d081130ac663b7f23}} 
+\index{Command@{Command}!argc@{argc}}
+\index{argc@{argc}!Command@{Command}}
+\doxyparagraph{argc}
+{\footnotesize\ttfamily int Command\+::argc}
+
+
+
+Cantidad máxima de argumentos que acepta el comando. 
+
+\mbox{\label{structCommand_af3570a489ae3e94d604ad89d70a1c5c8}} 
+\index{Command@{Command}!next@{next}}
+\index{next@{next}!Command@{Command}}
+\doxyparagraph{next}
+{\footnotesize\ttfamily struct \textbf{ Command}$\ast$ Command\+::next}
+
+
+
+Enlace al siguiente comando en la cadena. 
+
+\mbox{\label{structCommand_a82cbeee2cc24b4507f99d55d0d6c032f}} 
+\index{Command@{Command}!repr@{repr}}
+\index{repr@{repr}!Command@{Command}}
+\doxyparagraph{repr}
+{\footnotesize\ttfamily char$\ast$ Command\+::repr}
+
+
+
+Representación en caracteres del comando. 
+
+\mbox{\label{structCommand_aa908b40acf02ef11dd37a3a0b2bcbd10}} 
+\index{Command@{Command}!symbol@{symbol}}
+\index{symbol@{symbol}!Command@{Command}}
+\doxyparagraph{symbol}
+{\footnotesize\ttfamily enum \textbf{ Symbol} Command\+::symbol}
+
+
+
+Tipo de comando ingresado. 
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ command.\+h}\item 
+\textbf{ expr.\+h}\end{DoxyCompactItemize}

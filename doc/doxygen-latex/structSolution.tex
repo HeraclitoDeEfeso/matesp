@@ -1,0 +1,77 @@
+\doxysubsection{Solution Struct Reference}
+\label{structSolution}\index{Solution@{Solution}}
+
+
+T\+AD de las clases concretas para la interfaz Function.  
+
+
+
+
+Collaboration diagram for Solution\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=143pt]{structSolution__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \textbf{ Solution\+\_\+image} (struct \textbf{ Function} $\ast$self, float preimage)
+\begin{DoxyCompactList}\small\item\em Implementación del método para obtener el resultado. \end{DoxyCompactList}\item 
+\mbox{\label{structSolution_acfb7baab5a9a32abc1f6c1ad6855a23e}} 
+void \textbf{ Solution\+\_\+destroy} (struct \textbf{ Function} $\ast$self)
+\begin{DoxyCompactList}\small\item\em Destructor de la clases Solution. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Function} \textbf{ vtable}
+\begin{DoxyCompactList}\small\item\em Tabla virtual de las funciones que implementan la interfaz Function. \end{DoxyCompactList}\item 
+float \textbf{ clousure} [4]
+\begin{DoxyCompactList}\small\item\em Vector con las clausuras para evaluar la solución. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+T\+AD de las clases concretas para la interfaz Function. 
+
+Tipo abstracto de datos que compartiran las clases concretas que implementarán la interfaz Function. 
+
+\doxysubsubsection{Member Function Documentation}
+\mbox{\label{structSolution_a8cdd1923cb447d7094b216e38a8d550a}} 
+\index{Solution@{Solution}!Solution\_image@{Solution\_image}}
+\index{Solution\_image@{Solution\_image}!Solution@{Solution}}
+\doxyparagraph{Solution\_image()}
+{\footnotesize\ttfamily float Solution\+\_\+image (\begin{DoxyParamCaption}\item[{struct \textbf{ Function} $\ast$}]{self,  }\item[{float}]{preimage }\end{DoxyParamCaption})}
+
+
+
+Implementación del método para obtener el resultado. 
+
+Método concreto que implementa la interfaz Function para obtener el resultado numérico de la ecuación diferencial. Se unifica una única expresión matemática para todas las soluciones por lo que todas lo comparten en su tabla virtual. 
+
+\doxysubsubsection{Field Documentation}
+\mbox{\label{structSolution_ae43a80339273d038c0df392b981770f0}} 
+\index{Solution@{Solution}!clousure@{clousure}}
+\index{clousure@{clousure}!Solution@{Solution}}
+\doxyparagraph{clousure}
+{\footnotesize\ttfamily float Solution\+::clousure[4]}
+
+
+
+Vector con las clausuras para evaluar la solución. 
+
+\mbox{\label{structSolution_ad4ea8e5b769ab05b1b4d06ae1d421c9a}} 
+\index{Solution@{Solution}!vtable@{vtable}}
+\index{vtable@{vtable}!Solution@{Solution}}
+\doxyparagraph{vtable}
+{\footnotesize\ttfamily struct \textbf{ Function} Solution\+::vtable}
+
+
+
+Tabla virtual de las funciones que implementan la interfaz Function. 
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\textbf{ solver.\+h}\end{DoxyCompactItemize}

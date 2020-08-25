@@ -1,0 +1,99 @@
+\doxysubsection{expr.\+h File Reference}
+\label{expr_8h}\index{expr.h@{expr.h}}
+
+
+Interfaz de la clases Expression y Command.  
+
+
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{expr_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Expression}
+\begin{DoxyCompactList}\small\item\em T\+AD del árbol de la expresión abstracta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \textbf{ Symbol} \{ {\bfseries I\+N\+IT}, 
+{\bfseries S\+T\+EP}, 
+{\bfseries R\+E\+PR}, 
+{\bfseries C\+O\+EF}
+ \}
+\begin{DoxyCompactList}\small\item\em Tipos de commandos aceptados. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \textbf{ Expression\+\_\+destroy} (struct \textbf{ Expression} $\ast$self)
+\begin{DoxyCompactList}\small\item\em Destructor de la clase Expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+struct \textbf{ Command} $\ast$ \textbf{ C\+O\+M\+M\+A\+N\+DS}
+\begin{DoxyCompactList}\small\item\em Vector con todos los comandos permitidos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Interfaz de la clases Expression y Command. 
+
+\begin{DoxyAuthor}{Author}
+Alejandro Araneda ({\texttt{ eloscurodeefeso@gmail.\+com}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2020-\/06-\/21
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2020 
+\end{DoxyCopyright}
+
+
+\doxysubsubsection{Enumeration Type Documentation}
+\mbox{\label{expr_8h_a7feef761cd73fac6e25b8bb80d2c4e54}} 
+\index{expr.h@{expr.h}!Symbol@{Symbol}}
+\index{Symbol@{Symbol}!expr.h@{expr.h}}
+\doxyparagraph{Symbol}
+{\footnotesize\ttfamily enum \textbf{ Symbol}}
+
+
+
+Tipos de commandos aceptados. 
+
+Enumeración de los distintos tipos de comandos aceptados 
+
+\doxysubsubsection{Function Documentation}
+\mbox{\label{expr_8h_a01be0e712d24db4c523f4f5de836bf27}} 
+\index{expr.h@{expr.h}!Expression\_destroy@{Expression\_destroy}}
+\index{Expression\_destroy@{Expression\_destroy}!expr.h@{expr.h}}
+\doxyparagraph{Expression\_destroy()}
+{\footnotesize\ttfamily void Expression\+\_\+destroy (\begin{DoxyParamCaption}\item[{struct \textbf{ Expression} $\ast$}]{self }\end{DoxyParamCaption})}
+
+
+
+Destructor de la clase Expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em self} & Autoreferencia al objeto \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsubsection{Variable Documentation}
+\mbox{\label{expr_8h_a07953c5d554e0960852379242b0b54c4}} 
+\index{expr.h@{expr.h}!COMMANDS@{COMMANDS}}
+\index{COMMANDS@{COMMANDS}!expr.h@{expr.h}}
+\doxyparagraph{COMMANDS}
+{\footnotesize\ttfamily struct \textbf{ Command}$\ast$ C\+O\+M\+M\+A\+N\+DS}
+
+
+
+Vector con todos los comandos permitidos. 
+
