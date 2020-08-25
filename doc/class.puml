@@ -1,0 +1,58 @@
+@startuml laplace
+
+!startsub Fowarding
+reader.h.Parser o-left-> reader.h.Lexer 
+!endsub
+
+!startsub Factory
+abstract eval.h.Evaluator <<abstract>>
+interface eval.h.Function <<interface>>
+
+eval.h.Evaluator <|-down- eval.h.StaticSolver
+eval.h.Evaluator -right-> eval.h.Function
+eval.h.Function <|.down. eval.h.Solution1
+eval.h.StaticSolver .right.> eval.h.Solution1: <<create>>
+
+eval.h.Evaluator : {abstract} set_function(Expression): Function
+eval.h.StaticSolver : set_function(Expression): Function
+eval.h.Function : {abstract} image(float): float
+eval.h.Function : {abstract} repr(FILE): void
+eval.h.Solution1 : image(float): float
+eval.h.Solution1 : repr(FILE): void
+!endsub
+
+!startsub Chain
+abstract expr.h.Command <<abstract>>
+
+reader.h.Parser --> expr.h.Command
+expr.h.Command --> expr.h.Command : next
+expr.h.Command1 -up-|> expr.h.Command
+expr.h.Command2 -up-|> expr.h.Command
+
+expr.h.Command : get_command(char[]): Command
+!endsub
+
+expr.h.Expression o-right-> expr.h.Command 
+
+reader.h.Parser : read(FILE): Expression 
+reader.h.Parser : Lexer: Lexer
+reader.h.Lexer : read(FILE): char[]
+reader.h.Lexer : lines: int
+expr.h.Expression : command: Command
+expr.h.Expression : args[]: float
+expr.h.Expression : argc: int
+expr.h.Expression : curry(char[]) : int
+expr.h.Command : -symbol: Symbol
+expr.h.Command : -repr: char[]
+expr.h.Command : -argc: int
+expr.h.Command : get_expression(char[]): Expression
+expr.h.Command : get_symbol(): Symbol
+eval.h.Evaluator : function: Function
+eval.h.Evaluator : init: float
+eval.h.Evaluator : eval(Expression, FILE): void
+eval.h.Solution1 : closures[]: float
+
+reader.h -[hidden]down- expr.h
+expr.h.Command2 -[hidden]down- eval.h.Function
+skinparam classAttributeIconSize 0
+@enduml
