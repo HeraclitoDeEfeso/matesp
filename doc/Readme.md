@@ -31,29 +31,29 @@ _TODO_
 - [X] Descripción de la Práctica
     - [X] Relación con el paquete plotutils (graph, edo)
     - [X] Entorno de desarrollo
-    - [ ] Instrucciones de instalación
+    - [ ] ~~Instrucciones de instalación~~
     - [X] Instrucciones de compilación
 - [X] Diseño
     - [X] Diagrama de clases y patrones de diseño.
-    - [ ] Concepto REPL y diagrama de estados
-    - [ ] Eval: control data flow diagram para la simplificación de cálculos y tabla de soluciones.
-    - [ ] Test y metodología.
+    - [X] Concepto REPL ~~y diagrama de estados~~
+    - [ ] ~~Eval: control data flow diagram para la simplificación de cálculos y tabla de soluciones.~~
+    - [ ] ~~Test y metodología.~~
 - [X] Análisis y Guía de uso
     - [X] Descripción de cada comando.
     - [X] Resolución de la ecuación de un circuito RC.
 - [X] Conclusión
     - [X] Utilidad de la transformada de Laplace en solución de edo. 
     - [X] Apreciación de nuestra aplicación (salvedades, posibles mejoras, comparativa con edo)
-    - [ ] Apreciación sobre el cursado a distancia o virtual. (Opcional)
+    - [ ] ~~Apreciación sobre el cursado a distancia o virtual. (Opcional)~~
 - [X] Referencias
     - [X] EDO
     - [X] Laplace
-    - [ ] Circuito RC
+    - [ ] ~~Circuito RC~~
     - [X] Compilador
     - [X] Plotutils
-    - [ ] Test driven
+    - [ ] ~~Test driven~~
     - [X] Patrones de diseño
-    - [ ] REPL
+    - [ ] ~~REPL~~
 - [X] Anexos
-    - [ ] Tabla de trasformadas de Laplace usadas
+    - [ ] ~~Tabla de trasformadas de Laplace usadas~~
     - [X] Autodocumentación
